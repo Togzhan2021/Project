@@ -34,23 +34,27 @@ namespace Project
                 "; p2.x = " + p2.x + ", p2.y = " + p2.y);
 
             p1 = new Point(1, 3, '*');
-           // Update( p1 ); 
+            Update( p1 ); 
             Console.WriteLine("Call Move. p1.x = " + p1.x + ", p1.y = " + p1.y);
 
             Console.ReadLine();
         }
-       
 
+        public static void Update(Point p) {
+            p = new Point();
+        }
         public static void Func1(int value) {
 
         }
         public static void Func2(int value)
         {
             value++;
+           // Console.WriteLine("Func2,  x = " + value);
         }
         public static void Func3(int x)
         {
             x++;
+            //Console.WriteLine("Func3,  x = " + x);
         }
         public static void Move(Point p, int dx, int dy) {
 
