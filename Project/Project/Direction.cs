@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Human
+    enum Direction
     {
-        public int age;
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
     }
 }

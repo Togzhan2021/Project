@@ -26,11 +26,9 @@ namespace Project
             rightLine.Draw();
 
             Point p = new Point(4, 5, '*');
-            p.Draw();
 
-            Employee e = new Employee();
-            e.age = 25;
-            e.pay = 50000;
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }
